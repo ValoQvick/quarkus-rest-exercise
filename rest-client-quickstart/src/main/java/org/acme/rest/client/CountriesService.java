@@ -9,8 +9,8 @@ import java.util.Set;
 
 @Path("/all")
 @RegisterRestClient
-public interface ExtensionsService {
+public interface CountriesService {
 
     @GET
-    Set<Extension> getByRegion(@QueryParam String region);
+    Set<Country> getByRegion(@QueryParam String region);
 }

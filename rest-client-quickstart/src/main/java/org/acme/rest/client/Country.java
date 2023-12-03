@@ -3,7 +3,7 @@ package org.acme.rest.client;
 import java.util.List;
 import java.util.Map;
 
-public class Extension {
+public class Country {
 
     public Map<String, Object> name;
     public String region;

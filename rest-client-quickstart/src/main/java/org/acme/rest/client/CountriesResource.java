@@ -9,15 +9,15 @@ import jakarta.ws.rs.Path;
 import java.util.Set;
 
 @Path("/all")
-public class ExtensionsResource {
+public class CountriesResource {
 
     @Inject
     @RestClient
-    ExtensionsService extensionsService;
+    CountriesService countriesService;
 
     @GET
     @Path("/region/{region}")
-    public Set<Extension> region(@PathParam String region) {
-        return extensionsService.getByRegion(region);
+    public Set<Country> region(@PathParam String region) {
+        return countriesService.getByRegion(region);
     }
 }
